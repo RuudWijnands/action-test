@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: RuudWijnands/github-action-explore-debug@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           jq_selector: ".pull_request"
           example: ${{ secrets.EXAMPLE }}
