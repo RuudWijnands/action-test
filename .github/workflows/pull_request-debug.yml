@@ -12,3 +12,4 @@ jobs:
       - uses: RuudWijnands/github-action-explore-debug@main
         with:
           jq_selector: ".pull_request"
+          example: ${{ secrets.EXAMPLE }}
