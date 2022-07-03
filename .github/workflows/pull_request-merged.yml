@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: RuudWijnands/github-action-request-milestone-bash@master
         env:
-          GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
